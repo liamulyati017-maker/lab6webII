@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 32px 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #1f2937;
+}
+
+.highlight {
+    color: #173f75;
+    background-color: #e6f1ff;
+    border-left: 4px solid #3478c8;
+    padding: 12px;
+}
+
+.teks-besar {
+    font-size: 1.4rem;
+}
+
+.selesai span {
+    text-decoration: line-through;
+    color: #687386;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+#formPendaftaran {
+    max-width: 420px;
+    margin: 24px 0 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.workshop {
+    max-width: 420px;
+    margin: 24px 0 0;
+    padding: 20px 18px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#formPendaftaran h2,
+.workshop h1 {
+    margin: 0 0 6px;
+    color: #000000;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+#formPendaftaran label,
+.form-group label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#formPendaftaran input,
+#formPendaftaran button,
+.form-group input,
+.form-group select,
+.tombol-group button {
+    font: inherit;
+}
+
+#formPendaftaran input,
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+#formPendaftaran button,
+.tombol-group button {
+    padding: 9px 16px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    background: #eeeeee;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#formPendaftaran button {
+    width: auto;
+    align-self: flex-start;
+    min-width: 100px;
+    margin-top: 2px;
+}
+
+.workshop > p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #475569;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 6px;
+    color: #64748b;
+}
+
+#ringkasanSesi {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #334155;
+}
+
+#pesanWorkshop {
+    margin: 0 0 12px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.tombol-group {
+    display: flex;
+    gap: 10px;
+}
+
+.tombol-group button {
+    flex: 1;
+}
+
+.tombol-group .tombol-reset {
+    background: linear-gradient(135deg, #64748b, #475569);
+    box-shadow: 0 6px 14px rgba(71, 85, 105, 0.2);
+}
+
+/* Tampilan untuk perangkat mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 18px 14px;
+    }
+
+    #formPendaftaran,
+    .workshop {
+        max-width: 100%;
+        padding: 18px 16px;
+    }
+
+    #formPendaftaran h2,
+    .workshop h1 {
+        font-size: 1.4rem;
+    }
+
+    .tombol-group {
+        flex-direction: column;
+    }
+}
+
+.sembunyi {
+    display: none;
+}
